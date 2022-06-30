@@ -1,0 +1,57 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".MainActivity">
+ 
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="582dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+ 
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.MaterialComponents.Snackbar.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:shadowColor="#130C0C"
+            android:text="@string/check_whether_the_url_is_safe_or_not"
+            android:textColor="#F1EEEE"
+            android:textSize="30sp" />
+ 
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="390dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/enter_url"
+            android:textColor="#000" />
+ 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@android:drawable/button_onoff_indicator_on"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/check"
+            android:textColor="#121111" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
